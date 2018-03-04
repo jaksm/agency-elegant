@@ -1,0 +1,25 @@
+.hero-main {
+  background: url('../../assets/hero-min.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+.navbar {
+  padding: 3rem 0;
+  transition: all .3s ease;
+}
+#toggle {
+  z-index: 32 !important;
+}
+.navbar-item:hover {
+  color: inherit !important;
+  transition: background-color .3s ease;
+}
+.button {
+  transition: background-color .3s ease;
+}
+.logo-active {
+  display: none !important;
+}
+.nav-active {
+  background-color: $dark !important;
+  padding: 1rem 0;
+}

@@ -1,0 +1,22 @@
+aside {
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: $dark;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 29;
+  // opacity: .9;
+  transition: right .3s ease .1s;
+  ul {
+    a {
+      color: $primary;
+    }
+  }
+}
+.aside-active {
+  right: 0;
+}

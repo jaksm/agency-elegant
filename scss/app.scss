@@ -1,0 +1,52 @@
+// Deps
+@import '_variables.scss';
+@import '_theme.sass';
+@import '_mixins.scss';
+// Partials
+@import 'partials/_hero.scss';
+@import 'partials/_services.scss';
+@import 'partials/_sidebar.scss';
+.title::after {
+  content: '';
+  display: block;
+  top: 50%;
+  width: 5rem;
+  height: .2rem;
+  background-color: $primary;
+  margin: 1rem 0 !important;
+  transition: width .3s ease;
+}
+
+.title:hover {
+  &::after {
+    width: 10rem;
+  }
+}
+
+.subtitle {
+  line-height: 2;
+}
+
+.services {
+  font-size: 10rem;
+}
+
+.circled {
+  border-radius: 50% !important;
+}
+
+.is-128x128 {
+  margin: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $primary;
+}
